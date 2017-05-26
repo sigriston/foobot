@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- LESS THAN -->
+  <category>
+    <pattern>
+      XLT 0 XS 0
+    </pattern>
+    <template>FALSE
+    </template>
+  </category>
+
+  <category>
+    <pattern>
+      XLT <set>number</set> XS 0
+    </pattern>
+    <template>FALSE
+    </template>
+  </category>
+
+  <category>
+    <pattern>
+      XLT 0 XS <set>number</set>
+    </pattern>
+    <template>TRUE
+    </template>
+  </category>
+
+  <category>
+    <pattern>
+      XLT <set>number</set> XS <set>number</set>
+    </pattern>
+    <template><srai>XLT <map name="predecessor"><star index="1" /></map> XS <map name="predecessor"><star index="2" /></map></srai>
+    </template>
+  </category>
+</aiml>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <category>
+    <pattern>CONTE DE <set>number</set> ATEH <set>number</set></pattern>
+    <template>
+      <think>
+        <set var="count"><star index="1"/></set>
+        <set var="finish"><star index="2"/></set>
+        <set var="ascending"><srai>XLT <get var="count"/> XS <get var="finish"/></srai></set>
+      </think>
+      <condition var="ascending">
+        <li value="TRUE">
+          <condition var="count">
+            <li><value><get var="finish"/></value><get var="count"/></li>
+            <li><get var="count"/>, <loop/><think>
+                <set var="count"><map><name>successor</name><get var="count"/></map></set>
+            </think></li>
+          </condition>
+        </li>
+        <li value="FALSE">
+          <condition var="count">
+            <li><value><get var="finish"/></value><get var="count"/></li>
+            <li><get var="count"/>, <loop/><think>
+                <set var="count"><map><name>predecessor</name><get var="count"/></map></set>
+            </think></li>
+          </condition>
+        </li>
+      </condition>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>CONTE ATEH <set>number</set></pattern>
+    <template>
+      <srai>CONTE DE 1 ATEH <star/></srai>
+    </template>
+  </category>
+</aiml>

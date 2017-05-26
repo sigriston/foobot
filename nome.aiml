@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <category>
+    <pattern>OLAH ^</pattern>
+    <template><srai>OI <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>FALA ^</pattern>
+    <template><srai>OI <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>FALAIH ^</pattern>
+    <template><srai>OI <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>BOM DIA ^</pattern>
+    <template><srai>OI <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>BOA TARDE ^</pattern>
+    <template><srai>OI <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>BOA NOITE ^</pattern>
+    <template><srai>OI <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>SAUDACOES ^</pattern>
+    <template><srai>OI <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>OI ^</pattern>
+    <template>
+      <think><set name="topic">nome</set></think>
+      Olá, como você se chama?
+    </template>
+  </category>
+
+  <category>
+    <pattern>MEU NOME EH *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>O MEU NOME EH *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>EU ME CHAMO *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>SOU *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>SOU O *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>SOU A *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>EU SOU *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>EU SOU O *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>EU SOU A *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>ME CHAME DE *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>PODE ME CHAMAR DE *</pattern>
+    <template>
+      <srai>ME CHAMO <star/></srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>ME CHAMO *</pattern>
+    <template>
+      <think><set name="topic">nome</set></think>
+      <srai><star/></srai>
+    </template>
+  </category>
+  
+  <topic name="nome">
+    <category>
+      <pattern>*</pattern>
+      <template>
+        <think><set name="topic"/></think>
+        Falaí <set name="nome"><star/></set>, como posso te ajudar?
+      </template>
+    </category>
+  </topic>
+  
+  <category>
+    <pattern>COMO EH MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>COMO EH O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>QUAL EH MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>QUAL O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>QUAL EH O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>FALE MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>FALE O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>LEMBRA MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>LEMBRE MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>LEMBRA O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>LEMBRE O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>REPITA MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>REPITA O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>REPETE MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>REPETE O MEU NOME</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>COMO ME CHAMO</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>COMO EU ME CHAMO</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>QUEM SOU</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>QUEM SOU EU</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>DIGA QUEM SOU</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>DIGA QUEM SOU EU</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>DIGA QUEM EU SOU</pattern>
+    <template><srai>QUAL MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>DIGA O MEU NOME</pattern>
+    <template><srai>DIGA MEU NOME</srai></template>
+  </category>
+
+  <category>
+    <pattern>DIGA MEU NOME</pattern>
+    <template>Heisenberg... ooops... quer dizer... <srai>COMO EH MEU NOME</srai> ;-)</template>
+  </category>
+  
+  <category>
+    <pattern>QUAL MEU NOME</pattern>
+    <template>
+      <condition name="nome">
+        <li value="*"><random>
+          <li><get name="nome"/>!</li>
+          <li>Seu nome é <get name="nome"/>.</li>
+          <li>Tá esquecido, hein <get name="nome"/>?</li>
+        </random></li>
+        <li><think><set name="topic">nome</set></think>Você ainda não me disse. Como você se chama?</li>
+      </condition>
+    </template>
+  </category>
+</aiml>
