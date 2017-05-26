@@ -46,3 +46,4 @@ MIT
 [pandorabots]: https://www.pandorabots.com
 [Desafio de Programação - AIML]: https://github.com/9Nama/avaliacao-desenvolvedor-aiml
 [Nama]: http://nama.ai
+[Clubhouse]: https://playground.pandorabots.com/en/clubhouse/
